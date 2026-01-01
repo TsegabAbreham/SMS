@@ -6,6 +6,9 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../../firebase";
 import { doc, getDoc } from "firebase/firestore";
 
+import Image from "next/image";
+import logo from "../../public/logo.png";
+
 export default function Login() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -43,6 +46,7 @@ export default function Login() {
   return (
     <main className="flex items-center justify-center min-h-screen bg-gray-100">
       <form onSubmit={handleLogin} className="bg-white p-6 rounded shadow w-50%">
+        <Image src={logo} alt="School Logo" width={200} height={200} className="mb-6 mx-auto" />
         <h1 className="text-xl font-bold mb-4 capitalize text-blue-600 text-center">
           {selectedRole} Login
         </h1>

@@ -9,5 +9,13 @@ A Student Managment System (SMS) that allows teachers to manage students by mana
  - Anatol
  - Amanuel
  - Bisrat
- - Nathan 
+ - Nathan
  - Tsegab Moges
+
+ ## How SMS Works
+
+ The Student Managemnt System (SMS) is composed of multiple layers in order to be fully functional.
+
+ Uses Nextjs React as the front-end and back-end since it manages both the user interface and server-side API calls.
+ 
+ Uses firebase for a consistent database to store user's data such as usernames, passwords, attendance, and grades.
